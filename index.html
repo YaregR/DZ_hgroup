@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>hgroup</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/main.css">    
+</head>
+<body>
+    <div class="container">
+        <div class="technology">
+            <strong>Это экспериментальная технология</strong>
+            <br> 
+            Так как спецификация этой технологии ещё не стабилизировалась, смотрите <a href="#">таблицу совместимости</a>  по поводу использования в различных браузерах. Также заметьте, что синтаксис и поведение экспериментальной технологии может измениться в будущих версиях браузеров, вслед за изменениями спецификации.
+        </div>
+
+        <div class="note">
+            <strong>Примечание использования:</strong> Этот элемент был удален из HTML5 (W3C) спецификации , но до сих пор остается в спецификации WHATWG. Он частично встроен в большинствобраузеров, хотя бы поэтому врядли уйдет. Поскольку схематический алгоритм не реализован ни в одном браузере, семантика тега &lt hgroup> на практикереализована только теоретически. Спецификация HTML5 (W3C) дает совет как обозначать <a href="#" class="note_link">подзаголовки, альтернативные заголовки ислоганы</a>.
+        </div>
+
+        <p>
+            HTML &lt hgroup> Элемент (HTML Headings Group Element - Элемент Группы Заголовков HTML) представляет заголовок раздела. Он определяет один заголовок, который участвует в cхеме документа как заголовок явно или неявно заданного раздела, к которому он принадлежит.
+        </p>
+        <p>
+            Собственно текст для схематического алгоритма - это текст первого элемента заголовка HTML наивысшего ранга (т. Е. Первый 
+            <a href="#" class="tag">&lt h1></a>, 
+            <a href="#" class="tag">&lt h2></a>, 
+            <a href="#">h3</a>, 
+            <a href="#">h4</a>,
+            <a href="#">h5</a> или 
+            <a href="#">h6</a> с наименьшим числом потомков), а rank - уровень этого элемента заголовка HTML.
+        </p>
+        <p>
+            Поэтому этот элемент группирует несколько заголовков, внося лишь основной текст в план документа. Он позволяет связывать вторичные заголовки, такие как подзаголовки, альтернативные заголовки или даже теги, с основным заголовком, без загрязнения структуры документа.
+        </p>
+
+        <table class="properties">
+            <tr>
+                <th>Категория информации</th>
+                <td>Flow content, heading content, palpable content.</td>
+            </tr>
+            <tr>
+                <th>Permitted content</th>
+                <td>One or more &lt h1>, &lt h2>, &lt h3>, &lt h4>, &lt h5>, and/or &lt h6>.</td>
+            </tr>
+            <tr>
+                <th>Tag omission</th>
+                <td>Нет, открывающий и закрывающий теги обязательны.</td>
+            </tr>
+            <tr>
+                <th>Permitted parent elements</th>
+                <td>Any element that accepts flow content.</td>
+            </tr>
+            <tr>
+                <th>DOM interface</th>
+                <td>HTMLElement</td>
+            </tr>
+        </table>
+
+        <h2>Атрибуты</h2>
+        <div class="attributes_text">This element only includes the global attributes.</div>
+
+        <h2>Примеры</h2>
+        <div class="examples">
+            <pre>
+                <code>
+    &lthgroup>
+        &lth1>Главный заголовок&lt/h1>
+        &lth2>Вторичный заголовок&lt/h2>
+    &lt/hgroup>
+                </code>
+           </pre>
+        </div>
+
+        <h2>Совместимость браузеров</h2>
+        <div class="compatible_note">
+            <p>
+                <strong>
+                    <a href="#">We're converting our compatibility data into a machine-readable JSON format</a>
+                </strong>. This compatibility table still uses the old format, because we haven't yet converted the data it contains.
+                <strong>
+                    <a href="#">Find out how you can help!</a> 
+                </strong> 
+            </p>
+        </div>
+
+        <div class="compatible_list">
+            <ul>
+                <li>Настольные</li>
+                <li>Мобильные</li>
+            </ul>
+        </div>
+
+        <table class="compat_desktop">
+            <tr>
+                <th>Свойство</th>
+                <th>Chrome</th>
+                <th>Firefox (Gecko)</th>
+                <th>Internet Explorer</th>
+                <th>Opera</th>
+                <th>Safari</th>
+            </tr>
+            <tr>
+                <td>Basic support</td>
+                <td>5</td>
+                <td>4.0 (2.0)</td>
+                <td>9.0</td>
+                <td>11.10</td>
+                <td>4.1</td>
+            </tr>
+        </table>
+
+        <table class="compat_mobile">
+            <tr>
+                <th>Свойство</th>
+                <th>Android</th>
+                <th>Firefox Mobile (Gecko)</th>
+                <th>IE Mobile</th>
+                <th>Opera Mobile</th>
+                <th>Safari Mobile</th>
+            </tr>
+            <tr>
+                <td>Basic support</td>
+                <td>2.2</td>
+                <td>4.0 (2.0)</td>
+                <td>9.0</td>
+                <td>11.0</td>
+                <td>5.0</td>
+            </tr>            
+        </table>
+
+        <h2>Смотри также</h2>
+        <ul>
+            <li>
+                Другие элементы, связанные с разделом: &lt body>, &lt article>, &lt section>, &lt aside>, &lt h1>, &lt h2>, &lt h3>, &lt h4>, &lt h5>, &lt h6>, &lt nav>, &lt header>, &lt footer>, &lt address>;
+            </li>
+            <li>
+                Sections and outlines of an HTML5 document.
+            </li>
+        </ul>
+
+    </div>
+    
+</body>
+</html>

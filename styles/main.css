@@ -1,0 +1,76 @@
+.container {
+	max-width: 1200px;
+	margin: 0 auto;
+	font-family: Arial, Helvetica, sans-serif;
+	line-height: 1.75;
+}
+
+.technology, .compatible_note {
+	background-color: #fef1b6;
+	border-left: 8px solid #e1c542;
+	padding: 10px 160px 10px 10px;
+	margin-bottom: 25px;
+}
+
+.technology a, .note a, .compatible_note a {
+	color: #000000;
+}
+
+.note {
+	background-color: #dcf4ff;
+	border-left: 8px solid #1e7f9d;
+	padding: 10px 160px 10px 10px;
+	margin-bottom: 25px;
+}
+
+.note a::before {
+	background: transparent url(https://developer.mozilla.org/static/media/external.e091ac5d.svg) 0 0 no-repeat;
+    background-size: 16px;
+    content: "";
+    display: inline-block;
+    height: 16px;
+	width: 16px;
+    margin-right: 3px;
+    
+}
+
+
+.properties {
+	border: 2px solid #00458b;
+	border-left-width: 6px;
+	border-collapse: collapse;
+}
+
+.properties td, .properties th {
+	border-top: 2px solid #00458b;
+	padding: 10px;
+	text-align: left;
+}
+
+.examples pre {
+	border-left: 6px solid #00458b;
+	background-color: #eee;
+	margin: 0;
+}
+
+code {
+	padding: 0;
+}
+
+.compat_desktop, .compat_mobile, .compat_desktop td, .compat_mobile td, .compat_desktop th, .compat_mobile th {
+	border: 1px solid #c9c9c9;
+	margin-bottom: 30px;
+	border-collapse: collapse;
+	padding: 10px;
+	text-align: left;
+}
+
+h2 {
+	font-family: zillaslab,palatino,"Palatino Linotype",serif;
+    line-height: 1.2;
+	font-weight: bold;
+	font-size: 2em;
+}
+
+
+
